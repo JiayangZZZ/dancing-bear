@@ -3,9 +3,10 @@
 
 const express = require('express');
 const app = express();
+var html = 'scene.html';
 
 app.get('/', function (req, res) {
-	res.send("Hello world ..")
+	res.sendfile(html);
 })
 
 app.listen(3000, function() {
